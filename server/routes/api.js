@@ -1,6 +1,9 @@
 import express from 'express';
 import Controller from '../controllers/apiController';
 
-const router = express.router;
+const router = express.Router();
 
-router.post('/recipes', Controller.postRecipes);
+router.get('/recipes', Controller.postRecipes);
+router.post('/recipes', Controller.createRecipes);
+
+export default router;
