@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "babel-node server.js"
+    "start": "babel-watch server.js"
   },
   "author": "Femi A.",
   "license": "ISC",
@@ -18,5 +18,8 @@
     "eslint-config-airbnb": "^16.1.0",
     "express": "^4.16.2",
     "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "babel-watch": "^2.0.7"
   }
 }
