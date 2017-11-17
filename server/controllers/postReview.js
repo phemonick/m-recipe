@@ -12,7 +12,7 @@ class PostReview {
                 recipe = result;
             }
         })
-        res.status(200).send(result)
+        res.status(200).send(recipe)
     
     }
     

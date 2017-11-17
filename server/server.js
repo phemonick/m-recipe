@@ -12,10 +12,6 @@ app.use(morgan('dev'));
 // Parsing body data
 app.use(bodyParser.json({ type: 'application/json' }))
 app.use(bodyParser.urlencoded({ extended: true }));
-
-const router = express.Router();
-
-api(router);
 app.use('/api', api);
 
 app.get('/',  (req, res) => {
